@@ -8,9 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-{% for product in products %}
-    {{ product }}
-{% endfor %}
-{{ dump(products) }}
+{% block content %}
+    {% for product in products %}
+        {{ product }}
+    {% endfor %}
+        {{ dump(products) }}
+{% endblock %}
 </body>
 </html>
